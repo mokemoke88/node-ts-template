@@ -1,6 +1,7 @@
 node_modules/
 build/
 dist/
+.vscode/
 .bak
 .old
 npm-debug.log

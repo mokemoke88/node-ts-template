@@ -9,6 +9,7 @@
     "compile": "tsc --project .",
     "webpack": "tslint --project . && webpack --mode development",
     "webpack:stg": "tslint --project . && webpack --mode production",
+    "devserver": "webpack-dev-server --mode development",
     "test": "jest"
   },
   "keywords": [],
@@ -60,5 +61,13 @@
     "testMatch": [
       "**/src/**/*.test.ts?(x)"
     ]
+  },
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^7.2.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   }
 }
