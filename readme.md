@@ -3,7 +3,7 @@
 typescript で何かやるときのテンプレ
 
 ## 目的
- 最近よく使うので何度も書きたくない。& 書く度に微妙に変わるので集約したい.
+ 最近よく使うので何度も書きたくない。& 書く度に微妙に変わるので集約したい.
 
 ## 利用方法
 
@@ -31,14 +31,14 @@ node.js 10.0.13
   - npm run lint  
   src/以下のlintチェック
   - npm run lint:fix  
-  src/以下のlintチェックとソースフォーマット
+  src/以下のlintチェックとソースフォーマット
   - npm run test  
   jestを使ったtypescriptのunitテスト  
   src/**/*.test.ts が対象
   - npm run webpack  
-    - ブラウザ用のjsファイルをdist/以下に出力  
+    - ブラウザ用のjsファイルをdist/以下に出力  
     エントリポイントは src/index.ts
-    - ブラウザ用のcssファイルをdist/css/browser.cssに出力  
+    - ブラウザ用のcssファイルをdist/css/browser.cssに出力  
     エントリポイントは src/sass/style.scss
   - npm run webpack:stg
     - プロダクション環境用のjsファイルを出力
