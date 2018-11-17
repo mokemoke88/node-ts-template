@@ -5,6 +5,10 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
+const devServer = {
+  contentBase: path.resolve(__dirname, 'static'),
+  port: 3000
+};
 
 const browser = {
   entry: {
@@ -16,8 +20,22 @@ const browser = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist'
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          name: 'vendor',
+          chunks: 'initial',
+          enforce: true,
+        }
+      }
+    }
   },
   devtool: 'source-map',
+  devServer: devServer,
   module: {
     rules: [
       {
