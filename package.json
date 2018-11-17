@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "tslint --project .",
     "lint:fix": "tslint --project . --fix",
+    "compile": "tsc --project .",
     "webpack": "tslint --project . && webpack --mode development",
     "webpack:stg": "tslint --project . && webpack --mode production",
     "test": "jest"
