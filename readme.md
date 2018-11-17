@@ -1,9 +1,9 @@
 # Typescript プロジェクト用テンプレ
 
-typescript で何かやるときのテンプレ
+typescript で何かやるときのテンプレ
 
 ## 目的
-備忘録的に。
+備忘録的に。
 
 ## 利用方法
 
@@ -17,7 +17,7 @@ npm i
 node.js 10.0.13
 
 ## 提供しているもの
-- typescriptの設定( npm run compile )
+- typescriptの設定( npm run compile )
   - src/以下をコンパイルしてbuild/以下に出力  
   (tsconfig.json)
 - tslint & prettier の設定( npm run lint )
